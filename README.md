@@ -15,5 +15,4 @@ All tasks and implementations follow the internship guidelines.
 
 ## Status
 In Progress 🚀
-
 >>>>>>> 568d54ae72dbadf5b14494c78bbbbc6a1ae82b35
