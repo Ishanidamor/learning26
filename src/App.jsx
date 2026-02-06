@@ -7,6 +7,7 @@ import { FooterComponent} from "./components/FooterComponent";
 import { MapDemo1 } from './components/MapDemo1';
 import { MapDemo2 } from './components/MapDemo2';
 import { MapDemo3 } from './components/MapDemo3';
+import { MapDemo4 } from "./components/MapDemo4"
 import { Route, Routes } from "react-router-dom";
 import { NetflixHome } from "./components/NetflixHome";
 import { NetflixMovies } from "./components/NetflixMovies";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/teams/" element={<Teams/>}></Route>
         <Route path="/teamdetails/:name" element={<TeamDetails/>}></Route>
       </Routes>
+      <MapDemo4/>
     </div>
   );
 }
