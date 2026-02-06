@@ -19,6 +19,10 @@ import { ErrorNotFound } from './components/ErrorNotFound';
 import { Watch } from './components/Watch';
 import { Teams } from './components/Teams';
 import {TeamDetails} from "./components/TeamDetails"
+import { FunctionDemo1 } from './components/FunctionDemo1';
+import { UsestateDemo1 } from './components/UsestateDemo1';
+import { UsestateDemo2 } from './components/UsestateDemo2';
+import { UsestateDemo3 } from './components/UsestateDemo3';
 
 function App() {
   return (
@@ -32,11 +36,14 @@ function App() {
         <Route path="/netflixSeries" element={<NetflixSeries />}></Route>
         <Route path="/" element = {<HomeComponent/>}></Route>
         <Route path="/watch/:name" element={<Watch/>}></Route>
+        <Route path="/functiondemo1" element={<FunctionDemo1/>}></Route>
+        <Route path='/usestatedemo1' element={<UsestateDemo1/>}></Route>
+        <Route path='/usestatedemo2' element={<UsestateDemo2/>}></Route>
+        <Route path='/usestatedemo3' element={<UsestateDemo3/>}></Route>
         <Route path="/*" element={<ErrorNotFound/>}></Route>
         <Route path="/teams/" element={<Teams/>}></Route>
         <Route path="/teamdetails/:name" element={<TeamDetails/>}></Route>
       </Routes>
-      <MapDemo4/>
     </div>
   );
 }
