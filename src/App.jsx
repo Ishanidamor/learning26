@@ -23,6 +23,7 @@ import { FunctionDemo1 } from './components/FunctionDemo1';
 import { UsestateDemo1 } from './components/UsestateDemo1';
 import { UsestateDemo2 } from './components/UsestateDemo2';
 import { UsestateDemo3 } from './components/UsestateDemo3';
+import { Employees } from './components/Employees';
 
 function App() {
   return (
@@ -43,7 +44,9 @@ function App() {
         <Route path="/*" element={<ErrorNotFound/>}></Route>
         <Route path="/teams/" element={<Teams/>}></Route>
         <Route path="/teamdetails/:name" element={<TeamDetails/>}></Route>
+        <Route path="/employees" element={<Employees/>}></Route>
       </Routes>
+  
     </div>
   );
 }
