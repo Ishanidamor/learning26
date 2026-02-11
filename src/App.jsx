@@ -24,6 +24,10 @@ import { UsestateDemo1 } from './components/UsestateDemo1';
 import { UsestateDemo2 } from './components/UsestateDemo2';
 import { UsestateDemo3 } from './components/UsestateDemo3';
 import { Employees } from './components/Employees';
+import { FormDemo1 } from './components/forms/FormDemo1';
+import { FormDemo2 } from './components/forms/FormDemo2';
+import { FormDemo3 } from './components/forms/FormDemo3';
+import { FormDemo4 } from './components/forms/FormDemo4';
 
 function App() {
   return (
@@ -44,6 +48,10 @@ function App() {
         <Route path="/*" element={<ErrorNotFound/>}></Route>
         <Route path="/teams/" element={<Teams/>}></Route>
         <Route path="/teamdetails/:name" element={<TeamDetails/>}></Route>
+        <Route path="/formdemo1" element={<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element={<FormDemo2/>}></Route>
+        <Route path="/formdemo3" element={<FormDemo3/>}></Route>
+        <Route path="/formdemo4" element={<FormDemo4/>}></Route>
         <Route path="/employees" element={<Employees/>}></Route>
       </Routes>
   
