@@ -22,7 +22,8 @@ export const FormDemo4 = () => {
           </div><br></br>
           <div>
             <label>Rate Our Service:</label><br />
-        <select name="rating" {...register("rating")}>
+        <select name="rating" placeholder='Select Rating'{...register("rating")}>
+           <option value=""></option> 
           <option value="excellent">Excellent</option>
           <option value="good">Good</option>
           <option value="average">Average</option>

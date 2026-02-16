@@ -1,0 +1,142 @@
+/* Background */
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Form Card */
+.form-card {
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Inputs */
+.form-card input[type="text"],
+.form-card input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-card input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.form-card input[type="submit"]:hover {
+  background-color: #5a67d8;
+}
+
+/* Output Card */
+.output-card {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Output Text */
+.output-card h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.output-card p {
+  font-size: 15px;
+  margin: 8px 0;
+  word-wrap: break-word;   /* important for long emails */
+}
+
+
+/* Checkbox Styling */
+.checkbox-group {
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+/* Password Rules */
+.password-rules {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.password-rules p {
+  margin: 4px 0;
+  transition: 0.3s ease;
+}
+.password-rules p.valid {
+  color: green !important;
+}
+
+.password-rules p.invalid {
+  color: red !important;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 6px;
+}
