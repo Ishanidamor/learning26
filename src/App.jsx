@@ -30,6 +30,10 @@ import { FormDemo3 } from './components/forms/FormDemo3';
 import { FormDemo4 } from './components/forms/FormDemo4';
 import { FormDemo5 } from './components/forms/FormDemo5';
 import { FormDemo6 } from './components/forms/FormDemo6';
+import { APIDemo1 } from './components/api/APIDemo1';
+import { APIDemo2 } from './components/api/APIDemo2';
+import { APIDemo3 } from './components/api/APIDemo3';
+import { MovieDescription } from './components/forms/MovieDescription';
 
 function App() {
   return (
@@ -56,6 +60,10 @@ function App() {
         <Route path="/formdemo4" element={<FormDemo4/>}></Route>
         <Route path="/formdemo5" element={<FormDemo5/>}></Route>
         <Route path='/formdemo6' element={<FormDemo6/>}></Route>
+        <Route path='/apidemo1' element={<APIDemo1/>}></Route>
+        <Route path='/apidemo2' element={<APIDemo2/>}></Route>
+        <Route path='/apidemo3' element={<APIDemo3/>}></Route>
+        <Route path='/description/:id' element={<MovieDescription/>}></Route>
         <Route path="/employees" element={<Employees/>}></Route>
       </Routes>
   
